@@ -1,16 +1,30 @@
-# This is a sample Python script.
+import pandas as pd
+from sklearn.model_selection import train_test_split
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+DATASET = "dataSet/warranty_claims.csv"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Loads a CSV into a data frame.
+# Erases the unnecessary columns as in 'ID'.
+def load_data_set(datasetname):
+    return pd.read_csv(datasetname).drop(columns="ID")
+
+
+# Splits the data frame into X input and Y output
+def split_data_frame(dataframe):
+    x_axis = dataframe.drop("Fraud", axis="columns")
+    y_axis = dataframe["Fraud"]
+    return x_axis, y_axis
+
+
+# Splits the dataframe into train/test with ratio
+def train_test_model(x, y, ratio):
+    return train_test_split(x, y, train_size=ratio, test_size=1-ratio)
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    df = load_data_set(DATASET)
+    df.fillna(df.median())
+    input, output = split_data_frame(df)
+    print(train_test_model(input, output, 0.9))
