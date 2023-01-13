@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>DIMLS</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='home.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="home.js"></script>
+</head>
+<body>
+	<div class="main-content">
+		<div class="head-of-page">
+			<h1>DIMLS</h1>
+		</div>
+		<div class = "content">
+			<h2>Insert values!</h2>
+			<form class="form" method="post" enctype="multipart/form-data" action="http://localhost:5000/">
+				<ul class = "form-list">
+					<li>
+						<label for="Area">Area</label>
+  						<input type="text" id="Area" name="Area" value="Urban" placeholder="String">
+					</li>
+					<li>
+						<label for="Consumer_profile">Consumer_profile</label>
+			  			<input type="text" id="Consumer_profile" name="Consumer_profile" value="Business" placeholder="String">
+					</li>
+					<li>
+						<label for="Product_category">Product_category</label>
+  						<input type="text" id="Product_category" name="Product_category" value="Entertainment" placeholder="String">
+					</li>
+					<li>
+						<label for="Product_type">Product_type</label>
+			  			<input type="text" id="Product_type" name="Product_type" value="TV" placeholder="String">
+					</li>
+					<li>
+						<label for="AC_1001_Issue">AC_1001_Issue</label>
+  						<input type="text" id="AC_1001_Issue" name="AC_1001_Issue" value="0.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="AC_1002_Issue">AC_1002_Issue</label>
+			  			<input type="text" id="AC_1002_Issue" name="AC_1002_Issue" value="0.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="AC_1003_Issue">AC_1003_Issue</label>
+  						<input type="text" id="AC_1003_Issue" name="AC_1003_Issue" value="0.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="TV_2001_Issue">TV_2001_Issue</label>
+			  			<input type="text" id="TV_2001_Issue" name="TV_2001_Issue" value="0.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="TV_2002_Issue">TV_2002_Issue</label>
+  						<input type="text" id="TV_2002_Issue" name="TV_2002_Issue" value="0.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="TV_2003_Issue">TV_2003_Issue</label>
+			  			<input type="text" id="TV_2003_Issue" name="TV_2003_Issue" value="0.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="Claim_Value">Claim_Value</label>
+  						<input type="text" id="Claim_Value" name="Claim_Value" value = "20000.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="Service_Centre">Service_Centre</label>
+			  			<input type="text" id="Service_Centre" name="Service_Centre" value="13.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="Product_Age">Product_Age</label>
+  						<input type="text" id="Product_Age" name="Product_Age" value="16.0" placeholder="Float">
+					</li>
+					<li>
+						<label for="Purchased_from">Purchased_from</label>
+			  			<input type="text" id="Purchased_from" name="Purchased_from" value="Manufacturer" placeholder="String">
+					</li>
+					<li>
+						<label for="Call_details">Call_details</label>
+  						<input type="text" id="Call_details" name="Call_details" value="2.5" placeholder="Float">
+					</li>
+					<li>
+						<label for="Purpose">Purpose</label>
+						<input type="text" id="Purpose" name="Purpose" value = "Other" placeholder="String">
+					</li>
+					<li>
+						<button class= "submit" type="submit">Submit</button>
+					</li>
+				</ul>
+			</form>
+			<div class = "response">
+				<h2>Response!</h2>
+				<p id="result"></p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-container">
+		<div class="footer-section">
+			<h3>About</h3>
+			<ul>
+				<li>Carlos Pereira</li>
+				<li>DIMLS work assigment</li>
+			</ul>
+		</div>
+		<div class="footer-section">
+			<h3>Contact</h3>
+			<ul>
+				<li><a href="https://github.com/Sideghost">Github</a></li>
+				<li><a href="mailto:carlos.cordeiro@student.um.si">E-mail</a></li>
+				<li><a href="https://www.linkedin.com/in/carlos-guilherme-pereira-180b861b7/">Linkedin</a></li>
+			</ul>
+		</div>
+		<div class="footer-section">
+			<h3>Links</h3>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
